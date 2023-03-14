@@ -20,8 +20,8 @@ const salesRoutes = require('./routes/salesRoutes')
 const shoppingRoutes = require('./routes/shoppingRoutes')
 const vlogRoutes = require('./routes/vlogRoutes')
 
-app.get('/404', (req, res) => {
-  res.render('404', { title: 'Page Not Found' });
+app.get('/:404', (req, res) => {
+  res.send('Page Not Found. Please Try Again.');
 });
 
 // Load the create engine -> (npm install jsx-view-engine react react-dom)
